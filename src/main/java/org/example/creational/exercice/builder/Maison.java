@@ -16,6 +16,16 @@ public class Maison {
         couleur= builder.couleur;
     }
 
+    @Override
+    public String toString() {
+        return "Maison{" +
+                "nbrEtage=" + nbrEtage +
+                ", avecPiscine=" + avecPiscine +
+                ", type='" + type + '\'' +
+                ", couleur='" + couleur + '\'' +
+                '}';
+    }
+
     public static class Builder{
         private int nbrEtage;
         private boolean avecPiscine;
