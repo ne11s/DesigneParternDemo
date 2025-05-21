@@ -1,0 +1,18 @@
+package org.example.behavioral.exercice.observer;
+
+
+
+public class MyObserver implements Observer {
+
+    private String name;
+
+    public MyObserver(String name){
+        this.name = name;
+    }
+
+
+    @Override
+    public void update(String message) {
+        System.out.println(name+ " a recu un message "+message);
+    }
+}
